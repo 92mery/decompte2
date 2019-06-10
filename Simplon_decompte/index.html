@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Decompte</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto+Condensed:400,400i,700,700i&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="js/script.js"> </script>
+
+
+	</head>
+	<body>
+		<audio id="sound1">
+		<source src="audio/minuteur.ogg" type="audio/ogg">
+		<source src="audio/minuteur.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="sound">
+		<source src="audio/explosion.ogg" type="audio/ogg">
+		<source src="audio/explosion.mp3" type="audio/mpeg">
+	</audio>
+		<div id="first">
+		
+
+			<h1> WARNING !</h1>
+			<h2>Cet écran s’auto-détruira dans :</h2>
+
+			<div class="container">
+			
+				<div id="heure" class="rond"></div>
+				<div id="minute" class="rond"></div>
+				<div id="seconde" class="rond"></div>
+			</div>
+
+			<div class="container">
+			
+				<div class="texte">HEURES</div>
+				<div class="texte">MINUTES</div>
+				<div class="texte">SECONDES</div>
+			</div>
+		</div>
+
+		<div id= "end" >
+			<div onclick="push()" class="bouton">
+				<img src="images/reset.svg" alt="bouton reset">
+	</div>
+
+		</div>
+
+	
+			
+
+	<script type="text/javascript">rebour(20); //temps restant. Le mieux c'est avec un enregistrement dans la BDD</script>
+
+		
+	</body>
+</html>
