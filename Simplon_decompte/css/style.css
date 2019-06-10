@@ -24,7 +24,19 @@ body {
 	background-repeat: no-repeat;
 	 background-size: cover;
 	 display: none;
+	 animation: bombe 2s alternate ;
+}
+@keyframes bombe
+{
+	0%
+	{
+opacity: 0;	
+	}
 
+	100%
+	{
+opacity: 1;	
+	}
 }
 
 .bouton

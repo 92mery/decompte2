@@ -1,8 +1,4 @@
-	var sound1 = document.getElementById("sound1");
-	sound1.currentTime = 0;
-	sound1.play();
-
-	function rebour(tps){ //Deffinition d'une fonction
+function rebour(tps){ //Deffinition d'une fonction
 if (tps>0) { //Si le temps est différent de 0
 var heure = Math.floor(tps/3600); //Nombre d'heure écoulés
 if(heure >= 24){ //Si plus de 24 => 1 jour
@@ -55,9 +51,11 @@ setTimeout("rebour("+restant+")", 1000);//On rappelle la fonction toute les seco
 
 //bouton reset 
 
-function push() {
- 	document.getElementById("end").style.display = 'none';
- 		document.getElementById("first").style.display = 'block'; 
+function reset() {
+ 	document.getElementById("end").style.display = 'none';//on enlève le fond explosion
+ 	document.getElementById("first").style.display = 'block'; //on affiche le premier écran
+ 	setTimeout("rebour("+20+")", 0); //on remet l'animation (ici à 20s)
+ 
 
 
 }
